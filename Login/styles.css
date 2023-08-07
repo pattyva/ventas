@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+.message h1 {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+.message h2 {
+    font-size: 1.9rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color: #209aaa;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #fff;
+}
+
+.message button:hover {
+    background-color: #209aaa;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(7, 7, 7, 0.602);
+    text-align: center;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #209aaa;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+    color: #fcf6f6;
+}
+
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+/* Resto de estilos ... */
+
+.formulario .sign-in-btn {
+    width: 60%;
+    margin: auto;
+    border: solid thin rgb(11, 206, 206);
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: rgb(254, 255, 255);
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #000000;
+}
+
+.formulario .sign-in-btn:hover {
+    background-color: #007bff !important;
+}
+
+.formulario .sign-in-btn:active {
+    background-color: #0056b3 !important;
+}
+
+.formulario .sign-in-btn:focus {
+    outline: none;
+}
+
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
